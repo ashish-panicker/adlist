@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+/*
+	custom styles for the site.
+*/
+
+.error {
+	color: red;
+	font-size: 13px;
+}

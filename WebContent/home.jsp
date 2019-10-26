@@ -12,9 +12,9 @@
 	<header class="no-padding">
 		<jsp:include page="/WEB-INF/common/after_login.jsp"></jsp:include>
 	</header>
-	<div class="container  white lighten-4" style="margin-top: 50px;">
+	<div class="container  white lighten-4 " style="margin-top: 50px;">
 		<div class="row" style="padding-top: 50px;">
-			<div class="input-field col s12 m12">
+			<div class="input-field col s12 m12 z-depth-5">
 				<i class="material-icons prefix">search</i> <input
 					placeholder="Search for an ad" id="search" type="text"
 					name="search" class="validate"> <label>SEARCH</label>
@@ -22,7 +22,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="col s12 m12">
+			<div class="col s12 m12 z-depth-5">
 				<h5 class="start text-primarycolor">Events</h5>
 				<p class="start-paragraph-text text-primarycolor">Kiosk Browser
 					has an extensive feature set. You can try these features simply by

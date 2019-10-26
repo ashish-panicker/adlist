@@ -13,8 +13,8 @@
 	<header class="no-padding">
 		<jsp:include page="/WEB-INF/common/before_login.jsp"></jsp:include>
 	</header>
-	<div class="container white lighten-4">
-		<div class="row" style="margin-top: 50px; padding: 10px">
+	<div class="container white lighten-4 ">
+		<div class="row z-depth-5" style="margin-top: 50px; padding: 10px">
 
 			<form class="col s12" id="postForm" novalidate="novalidate" method="post" action="">
 				<h5>post your ad</h5>

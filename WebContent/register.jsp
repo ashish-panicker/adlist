@@ -14,24 +14,24 @@
 	<header class="no-padding">
 		<jsp:include page="/WEB-INF/common/before_login.jsp"></jsp:include>
 	</header>
-	<div class="container white lighten-4" style="margin-top: 50px;">
+	<div class="container white lighten-4 z-depth-5" style="margin-top: 50px;">
 		<div class="row">
 			<div class="section"></div>
-			<div class="col s12">
+			<div class="col s12 z-depth-5">
 			
 				<c:if test="${ex eq true }">
-					<div class="card-panel red white-text s8 offset-s2">
+					<div class="card-panel red white-text  z-depth-1">
 						<span><b>Error</b><br>Unable to create user due to internal server error.</span>
 					</div>
 				</c:if>
 				<c:if test="${userPresent eq true }">
-					<div class="card-panel red white-text s8 offset-s2">
+					<div class="card-panel red white-text z-depth-1">
 						<span><b>Error</b><br>Unable to create user as user already exists..</span>
 					</div>
 				</c:if>
 				
 				<c:if test="${ex eq false }">
-					<div class="card-panel green white-text s8 offset-s2" >
+					<div class="card-panel green white-text z-depth-1" >
 						<p>Success </p>
 						<p>User created successfully. Your username is ${user.email}.</p>
 					</div>

@@ -14,22 +14,22 @@
 	<header class="no-padding">
 		<jsp:include page="/WEB-INF/common/before_login.jsp"></jsp:include>
 	</header>
-	<div class="container " style="margin-top: 50px;">
+	<div class="container" style="margin-top: 50px;">
 		<div class="row">
 			<div class="section"></div>
-			<div class="col s8 offset-s2 white lighten-4">
+			<div class="col s8 offset-s2 white lighten-4 z-depth-5">
 				<c:if test="${ex eq true }">
-					<div class="card-panel red white-text">
+					<div class="card-panel red white-text z-depth-1">
 						<span><b>Error</b><br>Unable to create user due to internal server error.</span>
 					</div>
 				</c:if>
 				<c:if test="${auth eq false }">
-					<div class="card-panel red white-text">
+					<div class="card-panel amber darken-4 white-text z-depth-1">
 						<span><b>Error</b><br>You cannot post an ad unless you login. Please login to continue.</span>
 					</div>
 				</c:if>
 				<c:if test="${login eq false }">
-					<div class="card-panel red white-text ">
+					<div class="card-panel red white-text z-depth-1">
 						<span><b>Error</b><br>Unable to login.Please make sure you have provided valid username/password.</span>
 					</div>
 				</c:if>

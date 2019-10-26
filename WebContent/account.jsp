@@ -23,12 +23,17 @@
 						<span><b>Error</b><br>Unable to create user due to internal server error.</span>
 					</div>
 				</c:if>
+				<c:if test="${auth eq false }">
+					<div class="card-panel red white-text">
+						<span><b>Error</b><br>You cannot post an ad unless you login. Please login to continue.</span>
+					</div>
+				</c:if>
 				<c:if test="${login eq false }">
 					<div class="card-panel red white-text ">
 						<span><b>Error</b><br>Unable to login.Please make sure you have provided valid username/password.</span>
 					</div>
 				</c:if>
-				<form class="col s12" method="post" action="register.user" id="loginForm" novalidate="novalidate">
+				<form class="col s12" method="post" action="login.user" id="loginForm" novalidate="novalidate">
 					<h5 class="teal-text">login to your account</h5>
 					
 					<div class="row" style="margin-top: 50px;">

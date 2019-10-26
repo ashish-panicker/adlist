@@ -33,13 +33,11 @@ public class UserDaoImpl implements UserDao {
 		MongoCollection<Document> collection = database.getCollection("users");
 		MongoCursor<Document> cursor = collection.find(Filters.eq("email", email)).iterator();
 		User user = null;
-		while (cursor.hasNext()) {
-			System.out.println("inside while...");
+		if (cursor.hasNext()) {
 			Document doc = cursor.next();
 			user = new User(doc.getString("email"), doc.getString("firstName"), doc.getString("lastName"),
 					doc.getString("password"), doc.getDate("registerDate"));
 		}
-//		mongoClient.close();
 		return user;
 	}
 

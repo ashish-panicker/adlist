@@ -43,7 +43,7 @@
 				class="large material-icons">mode_edit</i>
 			</a>
 			<ul>
-				<li><a class="btn-floating red"><i class="material-icons">add</i></a></li>
+				<li><a class="btn-floating red" href="post_ad.do"><i class="material-icons">add</i></a></li>
 				<li><a class="btn-floating green darken-1"><i
 						class="material-icons">account_box</i></a></li>
 				<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>

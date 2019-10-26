@@ -81,18 +81,7 @@
 					and commercial use.</p>
 			</div>
 		</div>
-		<div class="fixed-action-btn">
-			<a class="btn-floating btn-large green l"> <i
-				class="large material-icons">mode_edit</i>
-			</a>
-			<ul>
-				<li><a class="btn-floating red"><i class="material-icons">add</i></a></li>
-				<li><a class="btn-floating green darken-1"><i
-						class="material-icons">account_box</i></a></li>
-				<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-				<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-			</ul>
-		</div>
+		
 	</div>
 
 	<jsp:include page="/WEB-INF/common/footer.jsp"></jsp:include>

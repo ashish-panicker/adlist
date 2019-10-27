@@ -7,3 +7,13 @@
 	color: red;
 	font-size: 13px;
 }
+
+.pad-10{
+	padding: 10px;
+}
+.margin-1{
+	margin: 1px;
+}
+#my-post-h5{
+	padding-left:10px;
+}

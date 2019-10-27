@@ -6,7 +6,7 @@ import java.util.Date;
 public class Post {
 
 	private String title;
-	private String neighbourhood;
+	private String area;
 	private String postalCode;
 	private String category;
 	private String description;
@@ -24,7 +24,7 @@ public class Post {
 	public Post(String title, String neighbourhood, String postalCode, String category, String description,
 			String email, String phone, Date postedDate, boolean emailMe, boolean callMe, boolean textMe) {
 		this.title = title;
-		this.neighbourhood = neighbourhood;
+		this.area = neighbourhood;
 		this.postalCode = postalCode;
 		this.category = category;
 		this.description = description;
@@ -44,12 +44,12 @@ public class Post {
 		this.title = title;
 	}
 
-	public String getNeighbourhood() {
-		return neighbourhood;
+	public String getArea() {
+		return area;
 	}
 
-	public void setNeighbourhood(String neighbourhood) {
-		this.neighbourhood = neighbourhood;
+	public void setArea(String area) {
+		this.area = area;
 	}
 
 	public String getPostalCode() {

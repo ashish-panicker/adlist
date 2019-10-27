@@ -27,8 +27,8 @@
 				</div>
 				<div class="row">
 					<div class="input-field col s7">
-						<input id="city" type="text" class="validate" name="city" data-error=".error2">
-						<label for="city">Neighbourhood</label>
+						<input id="area" type="text" class="validate" name="area" data-error=".error2">
+						<label for="area">Location</label>
 						<span class="error2"></span>
 					</div>
 					<div class="input-field col s3">
@@ -39,12 +39,12 @@
 					<div class="input-field col s2">
 						<select name="category" class="required validate" data-error=".error4" id="category">
 							<option value="default" disabled selected>select a value</option>
-							<option value="1">Community</option>
-							<option value="2">Events</option>
-							<option value="3">Sale</option>
-							<option value="4">Housing</option>
-							<option value="5">Jobs</option>
-							<option value="6">Services</option>
+							<option value="community">Community</option>
+							<option value="event">Events</option>
+							<option value="sale">Sale</option>
+							<option value="housing">Housing</option>
+							<option value="job">Jobs</option>
+							<option value="service">Services</option>
 						</select> <label>Category</label>
 						<span class="error4"></span>
 					</div>
@@ -59,16 +59,17 @@
 				</div>
 				<div class="row">
 					<div class="input-field col s8">
-						<input id="email" type="text" class="validate" name="email" data-error=".error6">
+						<input id="email" type="text" class="validate" name="email" data-error=".error6"
+							value="${sessionScope.user.email }">
 						<label for="email">Email</label>
 						<span class="error6"></span>
 					</div>
 					<div class="input-field col s4">
 						<div class="row">
-							<label> <input class="with-gap" name="group1" type="radio" checked />
+							<label> <input class="with-gap" name="contactme" type="radio" checked value="yes" />
 								<span>Contact me
 									through email</span>
-							</label> <label> <input class="with-gap" name="group1" type="radio" />
+							</label> <label> <input class="with-gap" name="contactme" type="radio" value="no"/>
 								<span>Do not ontact me
 									through email</span>
 							</label>
@@ -83,10 +84,10 @@
 					</div>
 					<div class="input-field col s4">
 						<div class="row">
-							<label> <input class="with-gap" name="group2" type="checkbox" /><span>It is Ok if you call
+							<label> <input class="with-gap" name="callme" type="checkbox" value="call" /><span>It is Ok if you call
 									me with
 									queries.</span>
-							</label> <label> <input class="with-gap" name="group2" type="checkbox" /><span>it is Ok if
+							</label> <label> <input class="with-gap" name="callme" type="checkbox" value="text"/><span>it is Ok if
 									you Text/SMS me with
 									queries.</span>
 							</label>

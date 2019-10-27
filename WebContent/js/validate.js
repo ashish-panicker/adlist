@@ -44,7 +44,7 @@ $("#loginForm").validate({
 $("#postForm").validate({
 	rules: {
 		title: { required: true },
-		city: { required: true },
+		area: { required: true },
 		category: { required: true, valueNotEquals:"default" },
 		description: { required: true },
 		zipcode: { required: true,digits: true, rangelength:[6,6]},
@@ -54,7 +54,7 @@ $("#postForm").validate({
 	},
 	messages: {
 		title: { required: "Title is required" },
-		city: { required: "City is required" },
+		area: { required: "Location is required" },
 		zipcode: { required: "Zip code is required",digits: "Pin code cannot be alphabets",rangelength:"Pincode must have 6 digits" },
 		category: { required: "First name is required", valueNotEquals:"Please select a category" },
 		description: { required: "Description is required" },

@@ -11,7 +11,14 @@ public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	private final String SALT = "sjfksjJ7634NJFNGPOkii7$%#";
 
+	public UserServiceImpl() {
+	}
+	
 	public UserServiceImpl(UserDao userDao) {
+		this.userDao = userDao;
+	}
+	
+	public void setUserDao(UserDao userDao) {
 		this.userDao = userDao;
 	}
 
